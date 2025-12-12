@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nigeria, Biafra & IPOB – Historical Overview</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --light: #ecf0f1;
+            --dark: #1a252f;
+            --text: #2d3436;
+            --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #dfe6e9 100%);
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text);
+            line-height: 1.8;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
+            color: #fff;
+            padding: 80px 20px 60px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+            font-weight: 700;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            letter-spacing: 1px;
+            word-wrap: break-word;
+        }
+        nav {
+            background: var(--primary);
+            padding: 20px 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 8px 10px;
+            font-weight: 600;
+            font-size: 1.05em;
+            padding: 12px 18px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            white-space: nowrap;
+        }
+        nav a:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+        }
+        nav a i {
+            margin-right: 8px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        section {
+            background: #fff;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            margin: 50px 0;
+        }
+        section:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 28px;
+            color: var(--primary);
+            border-bottom: 4px solid var(--accent);
+            padding-bottom: 12px;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            word-wrap: break-word;
+        }
+        h2 i {
+            margin-right: 12px;
+            color: var(--accent);
+            font-size: 1.2em;
+            flex-shrink: 0;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 18px;
+            font-size: 1.05em;
+            word-wrap: break-word;
+        }
+        .timeline {
+            position: relative;
+            margin: 50px 0;
+            padding: 30px 0;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background: var(--accent);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            background: #fff;
+            border: 5px solid var(--accent);
+            top: 20px;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 0.3);
+        }
+        .left { left: 0; }
+        .right { left: 50%; }
+        .right::after { left: -16px; }
+        .timeline-content {
+            padding: 25px 30px;
+            background: var(--light);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .timeline-content h3 {
+            margin: 0 0 10px;
+            color: var(--primary);
+            font-size: 1.3em;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
+            color: #fff;
+            margin-top: 80px;
+            font-size: 0.95em;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 992px) {
+            nav a {
+                margin: 8px 8px;
+                padding: 10px 15px;
+                font-size: 1em;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 60px 20px 50px;
+            }
+            header h1 {
+                font-size: 2.3em;
+            }
+            nav {
+                padding: 15px 10px;
+            }
+            nav a {
+                display: block;
+                margin: 10px auto;
+                max-width: 320px;
+                font-size: 1.1em;
+            }
+            section {
+                padding: 30px 20px;
+                margin: 30px 0;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            .timeline::after {
+                left: 31px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-item::after {
+                left: 15px;
+            }
+            .left, .right {
+                left: 0 !important;
+            }
+            .right::after {
+                left: 15px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                padding: 14px;
+                font-size: 1em;
+            }
+            section {
+                padding: 25px 15px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><i class="fa-solid fa-landmark"></i> Nigeria, Biafra & IPOB – Historical Overview</h1>
+    </header>
+    <nav>
+        <a href="#precolonial"><i class="fa-solid fa-monument"></i> Pre-Colonial</a>
+        <a href="#colonial"><i class="fa-solid fa-crown"></i> Colonial Era</a>
+        <a href="#coups"><i class="fa-solid fa-gavel"></i> Coups & Biafra</a>
+        <a href="#war"><i class="fa-solid fa-fire"></i> Civil War</a>
+        <a href="#modern"><i class="fa-solid fa-users"></i> Modern Agitation</a>
+    </nav>
+    <div class="container">
+        <section id="precolonial">
+            <h2><i class="fa-solid fa-monument"></i> Pre-Colonial Civilizations of Nigeria</h2>
+            <p>Nigeria’s history is ancient and diverse, predating European contact by millennia. The Nok culture (circa 1000 BC–300 AD) in central Nigeria is renowned for its terracotta sculptures depicting humans and animals, and for early iron-smelting technology that influenced sub-Saharan Africa. Archaeological evidence from sites like Taruga confirms advanced metallurgy and agriculture.</p>
+            <p>In the south, the Benin Empire (11th–19th centuries) flourished under the Oba's divine kingship, with a guild-based economy producing exquisite bronze plaques and ivory masks. Its capital, Benin City, was described by Europeans as a marvel of urban planning with wide streets and defensive walls longer than the Great Wall of China.</p>
+            <p>The Oyo Empire (14th–19th centuries) in the Yoruba southwest dominated with a cavalry army and constitutional monarchy, where the Alaafin balanced power with the Oyomesi council. It controlled slave trade routes to the coast.</p>
+            <p>Northern Nigeria saw the Kanem-Bornu Empire (9th–19th centuries) thrive on trans-Saharan trade in gold, salt, and slaves, fostering Islamic scholarship at centers like Ngazargamu. The 1804 Fulani Jihad by Usman dan Fodio established the Sokoto Caliphate, a vast theocratic state spanning modern northern Nigeria and beyond, emphasizing Sharia law and education.</p>
+            <p>Eastern Igbo societies operated via acephalous (leaderless) village assemblies, title systems, and the influential Aro oracle network, which regulated trade and justice across the region. This mosaic of centralized and decentralized polities underscored Nigeria's ethnic complexity.</p>
+        </section>
+        <section id="colonial">
+            <h2><i class="fa-solid fa-crown"></i> British Colonial Rule & The Road to Independence</h2>
+            <p>British engagement escalated in the 19th century via anti-slave trade patrols and palm oil commerce. By 1861, Lagos was annexed, followed by protectorates over the Niger River basin. In 1914, Governor Frederick Lugard amalgamated the Northern and Southern Protectorates into "Nigeria," a name derived from the Niger River, to streamline administration and railways, ignoring ethnic boundaries—over 250 groups were unified arbitrarily.</p>
+            <p>Indirect rule preserved northern emirs but disrupted southern acephalous systems, warrant chiefs in Igboland sparking the 1929 Aba Women's Riot against taxation. Southern missions drove literacy rates to 20% by 1940s, birthing elites like Herbert Macaulay, while northern conservatism limited education to under 2%.</p>
+            <p>Post-WWII nationalism surged: Azikiwe's NCNC (pan-Nigerian), Awolowo's AG (Yoruba regionalism), and Bello's NPC (northern conservatism). Constitutional conferences (Lagos 1958) devolved power regionally. Independence arrived October 1, 1960, with Abubakar Tafawa Balewa as prime minister, but census disputes and resource allocations sowed seeds of discord.</p>
+        </section>
+        <section id="coups">
+            <h2><i class="fa-solid fa-gavel"></i> The 1966 Coups, Pogroms & The Birth of Biafra</h2>
+            <p>The First Republic unraveled amid 1964 election fraud and 1965 Western crisis. January 15, 1966: Igbo-majority majors, led by Chukwuma Nzeogwu, assassinated Balewa, Akintola, and Bello in a "bloodless" anti-corruption coup, but spared eastern leaders. Aguiyi-Ironsi (Igbo) assumed power via decree abolishing regions, igniting northern fears of domination.</p>
+            <p>July 29 counter-coup by northern officers killed Ironsi and installed Yakubu Gowon. Pogroms followed: 30,000–50,000 Igbos massacred in the north, displacing 1.5 million eastward. The Aburi Accord (January 1967) in Ghana promised confederation but collapsed over implementation. May 30, 1967: Ojukwu declared Biafran independence, citing genocide and marginalization, blockading federal assets.</p>
+        </section>
+        <section id="war">
+            <h2><i class="fa-solid fa-fire"></i> The Nigerian Civil War (1967–1970) – Full Overview</h2>
+            <p>July 6, 1967: Federal "police action" invaded Biafra, escalating to full war. Biafra held initially with guerrilla tactics, capturing Midwest briefly. Key battles: Fall of Nsukka (August 1967), Enugu (October), Onitsha (multiple sieges), Aba (recaptured thrice). Biafran innovations included Ogbunigwe rocket launchers and Uli airstrip for aid drops.</p>
+            <p>Federal blockade induced kwashiorkor famine, killing 1–2 million civilians; Caritas and Red Cross airlifts saved thousands amid "Red Line" dangers. International: UK/USSR arms to Nigeria (oil interests), France/Portugal covert aid to Biafra. OAU mediated unsuccessfully. By December 1969, Biafra reduced to 1,500 sq km; Ojukwu fled January 10, 1970. Effiong surrendered January 15, ending 30 months of horror.</p>
+            <p>Gowon's 3Rs (Reconciliation, Rehabilitation, Reconstruction) promised no victor-no vanquished, with £120 million aid, but indigenization policies and oil boom marginalized east, fostering resentment.</p>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>July 1967</h3>
+                        <p>Federal invasion begins.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>October 1967</h3>
+                        <p>Enugu falls; famine worsens.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>1968–69</h3>
+                        <p>Owerri-Onitsha campaigns; aid flights intensify.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>January 1970</h3>
+                        <p>Biafra surrenders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="modern">
+            <h2><i class="fa-solid fa-users"></i> IPOB, Nnamdi Kanu & Modern Biafran Agitation</h2>
+            <p>Post-war grievances simmered: uneven reconstruction, 1970s oil wealth bypassing east. Movement for Actualization of Sovereign State of Biafra (MASSOB, 1999) pushed non-violent sit-at-homes. IPOB (2012), founded by Nnamdi Kanu via Radio Biafra UK, amplified marginalization claims—eastern states receive fewer infrastructure projects and face Fulani herder attacks killing thousands since 2016.</p>
+            <p>September 2017: Military's Operation Python Dance raided Kanu's home; IPOB banned as terrorist group under amended Terrorism Act, upheld by ECOWAS Court (2020) but contested. Eastern Security Network (ESN, 2020) formed to counter herders. Kanu arrested October 2015, bailed 2017, fled to Israel; extraordinary rendition from Kenya June 2021, sparking protests.</p>
+            <p>After a protracted trial, on November 20, 2025, Justice James Omotosho of the Federal High Court convicted Kanu on seven terrorism-related charges and sentenced him to life imprisonment. He is currently detained in Sokoto Correctional Centre. Appeals are pending, with defense arguing jurisdictional errors and use of repealed laws. Efforts for political resolution continue, including visits by southeastern leaders. The Biafran issue remains deeply emotional, symbolizing unresolved federal inequities.</p>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p>© 2025 Nigeria–Biafra–IPOB History Project | Updated December 2025 | Sources: Verified historical records & recent news reports</p>
+        </div>
+    </footer>
+  </body>
+  
